@@ -7,107 +7,127 @@
     <title>Order Page</title>
     <link rel="icon" type="image/png" href="./Assets/Images/Trove Logo.jpeg">
 </head>
+<figure>
 
-<body>
-    <fieldset>
-        <legend>
-            <h3>Customer Information</h3>
-        </legend>
+    <body>
+        <header>
+            <nav align="center">
+                <h1>TROVE</h1>
+                <hr>
+                <a href="">Home</a> |
+                <a href="">Book Catalog</a> |
+                <a href="">Reviews</a> |
+                <a href="">Orders</a>
+                <hr>
+            </nav>
+            <h1>Book Order Form</h1>
+            <hr>
+        </header>
 
-        <label for="fullname">Full Name:</label><br>
-        <input type="text" name="fullname" required><br><br>
+        <fieldset>
+            <legend>
+                <h3>Customer Information</h3>
+            </legend>
 
-        <label for="email">Email Address:</label><br>
-        <input type="email" name="email" required><br><br>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" name="fullname" required><br><br>
 
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" name="phone" required><br><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" name="email" required><br><br>
 
-        <label for="address">Delivery Address:</label><br>
-        <textarea name="address" rows="4" cols="40" required></textarea>
-    </fieldset>
-    <br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" name="phone" required><br><br>
 
-    <fieldset>
-        <legend>
-            <h3>Book Selection</h3>
-        </legend>
+            <label for="address">Delivery Address:</label><br>
+            <textarea name="address" rows="4" cols="40" required></textarea>
+        </fieldset>
+        <br>
 
-        <label for="book">Select Book:</label><br>
-        <select name="book" required>
-            <option value="">-- Choose a Book --</option>
-            <option>The Great Gatsby</option>
-            <option>Harry Potter and the Philosopher's Stone</option>
-            <option>Atomic Habits</option>
-            <option>Rich Dad Poor Dad</option>
-            <option>The Alchemist</option>
-            <option>To Kill a Mockingbird</option>
-            <option>The Hobbit</option>
-            <option>Think and Grow Rich</option>
-        </select>
+        <fieldset>
+            <legend>
+                <h3>Book Selection</h3>
+            </legend>
+
+            <label for="book">Select Book:</label><br>
+            <select name="book" required>
+                <option value="">-- Choose a Book --</option>
+                <option>The Great Gatsby</option>
+                <option>Harry Potter and the Philosopher's Stone</option>
+                <option>Atomic Habits</option>
+                <option>Rich Dad Poor Dad</option>
+                <option>The Alchemist</option>
+                <option>To Kill a Mockingbird</option>
+                <option>The Hobbit</option>
+                <option>Think and Grow Rich</option>
+            </select>
+
+            <br><br>
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" name="quantity">
+
+            <br><br>
+            <label for="format">Book Format:</label><br>
+
+            <input type="radio" name="format">
+            <label for="paperback">Paperback</label>
+
+            <input type="radio" name="format">
+            <label for="hardcover">Hardcover</label>
+
+            <input type="radio" name="format">
+            <label for="ebook">E-Book</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>
+                <h3>Payment Details</h3>
+            </legend>
+
+            <label for="payment">Payment Method:</label><br>
+
+            <select name="payment">
+                <option value="">-- Select Payment Method --</option>
+                <option> 💵 Cash on Delivery</option>
+                <option> 💳 Credit Card</option>
+                <option> 💳 Debit Card</option>
+                <option> 🏦 Bank Transfer</option>
+            </select>
+
+            <br><br>
+            <label for="delivery">Preferred Delivery Date:</label><br>
+            <input type="date" name="delivery">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>
+                <h3>Additional Requests</h3>
+            </legend>
+
+            <label for="notes">Special Instructions:</label><br>
+            <textarea name="notes" placeholder="Gift wrapping, delivery notes, etc."></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="checkbox">
+        <label for="terms">
+            I confirm that the information provided is correct.
+        </label>
 
         <br><br>
-        <label for="quantity">Quantity:</label><br>
-        <input type="number" name="quantity">
 
-        <br><br>
-        <label for="format">Book Format:</label><br>
+        <input type="submit" value="Place Order">
+        <input type="reset" value="Clear Form">
 
-        <input type="radio" name="format">
-        <label for="paperback">Paperback</label>
-
-        <input type="radio" name="format">
-        <label for="hardcover">Hardcover</label>
-
-        <input type="radio" name="format">
-        <label for="ebook">E-Book</label>
-    </fieldset>
-    <br>
-
-    <fieldset>
-        <legend>
-            <h3>Payment Details</h3>
-        </legend>
-
-        <label for="payment">Payment Method:</label><br>
-
-        <select name="payment">
-            <option value="">-- Select Payment Method --</option>
-            <option> 💵 Cash on Delivery</option>
-            <option> 💳 Credit Card</option>
-            <option> 💳 Debit Card</option>
-            <option> 🏦 Bank Transfer</option>
-        </select>
-
-        <br><br>
-        <label for="delivery">Preferred Delivery Date:</label><br>
-        <input type="date" name="delivery">
-    </fieldset>
-
-    <br>
-
-    <fieldset>
-        <legend>
-            <h3>Additional Requests</h3>
-        </legend>
-
-        <label for="notes">Special Instructions:</label><br>
-        <textarea name="notes" placeholder="Gift wrapping, delivery notes, etc."></textarea>
-    </fieldset>
-
-    <br>
-
-    <input type="checkbox">
-    <label for="terms">
-        I confirm that the information provided is correct.
-    </label>
-
-    <br><br>
-
-    <input type="submit" value="Place Order">
-    <input type="reset" value="Clear Form">
-
-    </form>
-</body>
+        </form>
+        <hr>
+        <footer>
+            <p>&copy; 2024 Trove Bookshop. All rights reserved.</p>
+        </footer>
+    </body>
+</figure>
 
 </html>
